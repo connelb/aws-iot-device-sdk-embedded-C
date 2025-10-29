@@ -22,7 +22,7 @@ list(APPEND PKCS_SOURCES
 )
 
 # CPP files are searched for supporting CI build checks that verify C++ linkage of the Fleet Provisioning library
-file( GLOB DEMO_SRCS "*.c*" )
+file( GLOB DEMO_SRCS "fleet_provisioning_with_csr_demo.c" "pkcs11_operations.c" "*.c*" )
 
 # Demo target.
 add_executable( ${DEMO_NAME}

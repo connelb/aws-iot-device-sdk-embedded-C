@@ -12,7 +12,7 @@ list(APPEND PKCS_SOURCES
             "${CORE_PKCS11_3RDPARTY_LOCATION}/mbedtls_utils/mbedtls_utils.c"
             )
 
-file( GLOB DEMO_SRCS "*.c*" )
+file( GLOB DEMO_SRCS "pkcs11_demo_objects.c" "*.c*" )
 
 # Demo target.
 add_executable(
